@@ -7,6 +7,7 @@
 	<style type="text/css">
 	
 	#anim{
+		position: relative;
 		width: 200px;
 		height: 200px;
 		animation-name: boop;
@@ -16,14 +17,20 @@
 
 	@keyframes boop{
 		0%	{background-color: red}
+		0%	{left:0%}
 		10%	{background-color: cadetblue;}
+		10%	{left:10%}
 		25%	{background-color: blue}
+		25%	{left: 30%}
 		30%	{background-color: darkgoldenrod;}
 		50%	{background-color: yellow}
 		65%	{background-color: darkmagenta;}
+		70%	{left:60%}
 		75%	{background-color: pink}
+		80% {left:75%}
 		90%	{background-color: lightsalmon;}
-		100%	{background-color: green}
+		100% {background-color: green}
+		100% {left:87%}
 	}
 
 
