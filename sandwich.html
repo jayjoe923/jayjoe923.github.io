@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.minion{
+			color: coral;
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlW9XEEg3qM-sPuPqV5SGyQfk0iqEA_SmYdw&usqp=CAU);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		body{
+			height: 3000px;
+		}
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	var number=0;
+
+	function makeMinion(){
+		number=number + 1
+	
+
+		var myMinion = document.createElement("div");
+
+		myMinion.innerText = number;
+		document.body.appendChild(myMinion);
+		myMinion.classList.add('minion');
+
+	}
+
+	setInterval(makeMinion, 100)
+</script>
+</body>
+</html>
