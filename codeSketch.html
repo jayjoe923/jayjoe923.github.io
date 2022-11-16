@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.heart{
+			background-image: url(heart.png);
+			position: absolute;
+			height: 50px;
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function drawHeart(){
+
+			var myHeart = document.createElement("div");
+			document.body.appendChild(myHeart);
+			myHeart.classList.add('heart');
+
+			console.log(event.clientX, event.clientY);
+			myHeart.style.left=event.clientX - 25 + "px";
+			myHeart.style.top = event.clientY - 25+ "px";
+			}
+		
+
+		document.addEventListener("click", drawHeart);
+
+		
+			
+			
+	
+			
+		
+
+		
+	</script>
+</body>
+</html>
