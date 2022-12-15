@@ -16,6 +16,9 @@
 
 	Sam W.
 	Odd even strategy -->
+
+	<audio id="music1" src="music1.mp3"></audio>
+
 	<script type="text/javascript">
 			let counter = 0;
 		document.addEventListener("click", 
@@ -26,9 +29,12 @@
 
 				if (counter%2 == 1){
 					document.body.style.backgroundColor = "blue";
+					music1.play()
 					}
+
 				if (counter%2 == 0){
 					document.body.style.backgroundColor = "red";
+					music1.pause()
 				}
 			}
 			)
