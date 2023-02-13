@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#text{
+			font-size:75px;
+		}
+		p{
+			font-size:50px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<p> ¡Bienvenidos! Este es para practicor por el preterito con verbos irregulares en el froma de Yo.</p>
+
+	<div id="text"></div>
+		<div id="text2"></div>
+
+</center>
+
+<script type="text/javascript"></script>
+	<script type="text/javascript">
+		
+		var breakfast = ["ser(Yo)", "estar(Yo)", "ir(Yo)", "saber(Yo)", "almorzar(Yo)", "andar(Yo)", "venir(Yo)", "poder(Yo)", "poner(Yo)", "decir(Yo)", "hacer(Yo)"]
+
+		var answer = ["fui", "estuve", "fui", "supe", "almorcé", "anduve", "vine", "pude", "puse", "dije", "hice"]
+
+
+
+	function scrollText (){
+		var number = Math.round(Math.random()*10)
+		text.innerText = breakfast[number];
+		text2.innerText = answer[number];
+		console.log(number)
+
+	}
+
+
+	var stop =setInterval(scrollText, 100); 
+	function stopText () {clearInterval(stop)}
+
+
+	let counter = 0;
+	document.addEventListener("click", 
+
+			function(){
+				counter = counter + 1;
+				console.log(counter);
+
+				if (counter%2 == 1){
+			 		var stop =setInterval(scrollText, 100); 
+
+					}
+				if (counter%2 == 0){
+						clearInterval(stop)
+					
+				}
+			})
+
+
+
+
+</script>
+
+</body>
+</html>

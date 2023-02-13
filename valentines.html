@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color:blueviolet;
+	
+			
+		}
+
+		h1{
+			position:absolute;
+			top:10px;
+			width:500px;
+			left:5px;
+			z-index: 3;
+		}
+		#smile1{
+			background-image: url(smile.png);
+			background-repeat: no-repeat;
+			height:100px;
+			width: 100px;
+			background-size:contain;
+			left:500px;
+		
+			position:relative;
+		}
+
+		.smile{
+			background-image: url(smile.png);
+			background-repeat: no-repeat;
+			height:100px;
+			width: 100px;
+			background-size:contain;
+			left:500px;
+			opacity: 0.0;
+			transition: 0.5s;
+		
+			position:absolute;
+		}
+
+		.smile:hover{
+			opacity:1.0;
+		}
+	</style>
+</head>
+<body>
+<div  id="smile1"></div>
+<h1>You make my life full of smiles!!!!</h1>
+
+<script type="text/javascript">
+
+	function makeSmile (){
+		var x = Math.round(Math.random()*700)
+		var y = Math.round(Math.random()*700)
+		var mySmile = document.createElement("div");
+		document.body.appendChild(mySmile);
+		mySmile.classList.add('smile');
+		mySmile.style.backgroundImage="url(smile.png)";
+		mySmile.style.left= x + "px";
+		mySmile.style.top = y + "px";
+
+	}
+
+	smile1.addEventListener("click", function(){
+
+	for(var i=0; i<100; i=i+1)
+			{makeSmile()}
+	})
+
+	
+</script>
+</body>
+</html>
+
+<!-- you make my world full of smiles -->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Movie</title>
+	<style type="text/css">
+		.square{
+		background-image: url(3.png);
+/*		background-image: url(https://cdn.dribbble.com/users/722835/screenshots/9247227/media/e44d7ffd7210547a7717d3cccb4ab998.gif);*/
+		background-repeat: no-repeat;	
+		height:200px;
+		width:200px;
+		background-position: center;
+		position: relative;
+		display: inline-block;
+
+		}
+		
+
+
+	</style>
+</head>
+<body>
+
+	<p> Listen to some background music here!!!</p>
+	
+
+<div id="molly" class="square"></div>
+
+
+
+<script type="text/javascript">
+
+	var food= ["sesame buns", "pad thai", "veggie dumplings", "eggplant", "chocolate", "saag paneer"]
+	var plate= document.getElementById("plate");
+	plate.innerText = food;
+		plate.addEventListener("click", function(
+			){
+			
+			var x= Math.floor(Math.random()*5)
+			plate.innerText = food[x];
+		})
+
+	// const bird= document.getElementById("molly");
+
+	// function makeBird(){
+	// 	var gold= document.createElement('div');
+	// 	document.body.appendChild(gold);
+	// 	gold.classList.add('square');
+	// 	gold.style.left= Math.random()*1000+"px";
+	// 	gold.style.top= Math.random()*1000+"px";
+
+	// 	document.addEventListener("click",
+	// 	function(event){
+	// 		gold.style.left= event.clientX+"px";
+	// 		gold.style.top= 100+event.clientY+"px";
+
+	// 	})
+
+	// }
+
+	// function sayHey(){
+	// 	console.log("hello")
+	// }
+
+	
+
+
+	// 	// function spin(){
+	// 	// 	bird.style.transform = "rotate(720deg)";
+
+	// 	// }
+	// 	// )
+
+	// for (var i=0;1<10;i=i+1){
+	// 	makeBird()
+	// }
+
+	// setInterval(makeBird, 500)
+</script>
+
+</body>
+</html>

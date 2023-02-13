@@ -1,0 +1,125 @@
+<!-- code the snake game
+I am really interested in making something interactive
+
+I want to make a div of varying colored 10x10 squares that form a grid
+I am going to make a div that has a 10x10 square
+it will move 10 px every x amount of time
+when w=moves up
+when d=moves rights
+when s=moves down
+when a=moves left 
+a=97
+d=100
+s=115
+w=119-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	#body{
+		background-color: "blue";
+	}
+	
+   #snake{
+      top: 50px;
+      left: 50px;
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      z-index: 2;
+    }
+    
+	.background{
+    position: relative;
+		height: 40px;
+		width: 40px;
+		background-color:blue;
+/*		position:relative;*/
+		display:inline-block;
+		margin:0px;
+		margin-bottom: -10px;
+		z-index: 1;
+	}
+  
+    
+
+
+	</style>
+</head>
+<body>
+
+<div></div>
+  
+<div id="snake"></div>
+
+<script type="text/javascript">
+		function makeGrid(something){
+			var grid = document.createElement('div');
+			document.body.appendChild(grid)
+			grid.classList.add("background");
+      
+          grid.setAttribute("id", i);
+
+					if (something%2 == 1){
+					grid.style.backgroundColor = "green";
+					}
+
+				if (something%2 == 0){
+					grid.style.backgroundColor = "darkgreen";
+					}
+			}
+
+		
+
+		for(var i=0; i<560; i=i+1)
+			{makeGrid(i)}
+
+		// document.addEventListener("keypress", function(up){
+		// 	console.log(up.keyCode);
+		// 	if(up.keyCode===119){
+		// 		snake.style.transform = "translateY(-40px)";
+		// 	}
+      
+		// })
+    
+    document.addEventListener("keypress", {
+    	
+    function (up){console.log(up.keyCode);
+			if(up.keyCode===119){
+				snake.style.transform = "translateY(-40px)";
+			}}
+
+			
+      
+		})
+
+  function down(down){
+    console.log(down.keyCode);
+			if(down.keyCode===115){
+				snake.style.transform = "translateY(+40px)";
+			}
+  }
+  
+  function left(left){
+    console.log(left.keyCode);
+			if(left.keyCode===97){
+				snake.style.transform = "translateY(-40px)";
+			}
+  }
+  
+  function right(right){
+    console.log(right.keyCode);
+			if(right.keyCode===100){
+				snake.style.transform = "translateY(+40px)";
+			}
+  }
+
+		
+</script>
+</body>
+</html>
