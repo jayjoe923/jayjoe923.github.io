@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	.box{
+
+		height:400px;
+		top: 0px;
+		width:475px;
+		background-color: mediumvioletred;
+		position:relative;
+		margin: 0px;
+		display: inline-block;
+		border:0px;
+		opacity: 1;
+/*		z-index: 1;*/
+	}
+
+	.reveal{
+
+		top: 0px;
+		height:400px;
+		width:475px;
+		position:relative;
+		margin: 0px;
+		display: inline-block;
+		background-size:contain;
+		border:0px;
+		opacity: 1;
+		background-size: 475px 400px;
+		background-repeat: no-repeat;
+/*		z-index: -1px;*/
+	}
+
+	#container1{
+		z-index: -10;
+	}
+#container2{
+		z-index: 10;
+		top:0%;
+		position:absolute;
+	}
+	#num1{
+		background-image: url(./MotherGifts/1.jpeg);
+	}
+
+	#num2{
+		background-image: url(./MotherGifts/2.jpeg);
+	}
+
+	#num3{
+		background-image: url(./MotherGifts/3.jpeg);
+	}
+
+	#num4{
+		background-image: url(./MotherGifts/4.jpeg);
+	}
+
+	#num5{
+		background-image: url(./MotherGifts/5.jpeg);
+	}
+
+	#num6{
+		background-image: url(./MotherGifts/6.jpeg);
+	}
+
+
+
+	body{
+		margin:0px;
+		font-family: sans-serif;
+		background-color: ivory;
+		color: blue;
+
+	}
+
+	#text{
+		top:200px;
+		font-family: sans-serif;
+		background-color: ivory;
+		color: blue;
+		margin: 40px;
+		z-index:-10px;
+		position:absolute;	
+	}
+	
+
+</style>
+</head>
+<body>
+
+<div id="text">
+	<h1>Happy Mothers Day Mom</h1>
+		<h2> Insert Message Here..... </h2>
+</div>
+		
+
+
+		
+
+<div class="container" id="container1">
+	<div id="num1" class="reveal"></div>
+	<div id="num2" class="reveal"></div>
+	<div id="num3" class="reveal"></div>
+	<div id="num4" class="reveal"></div>
+	<div id="num5" class="reveal"></div>
+	<div id="num6" class="reveal"></div>
+</div>
+
+<div class="container" id="container2">
+	<div id="one" class="box"></div>
+	<div id="two" class="box"></div>
+	<div id="three" class="box"></div>
+	<div id="four" class="box"></div>
+	<div id="five" class="box"></div>
+	<div id="six" class="box"></div>
+
+
+</div>
+	<script type="text/javascript">
+		var click1 = 0
+		var click2 = 0
+		var click3 = 0
+		var click4 = 0
+		var click5 = 0
+		var click6 = 0
+
+		var reveal = Array.from(document.getElementsByClassName("reveal"))
+		one.addEventListener("click", function(event){
+			one.style.opacity= "0";
+			click1=1
+			if (click1==1 && click2==1 && click3==1 && click4==1 && click5==1 && click6==1 ){
+			reveal.forEach(function(element){
+
+			element.style.opacity= "0";
+			element.style.transition = "1s";
+			})
+			
+		}})
+
+
+		two.addEventListener("click", function(event){
+			two.style.opacity= "0";
+			click2=1
+			if (click1==1 && click2==1 && click3==1 && click4==1 && click5==1 && click6==1 ){
+
+
+			reveal.forEach( function(element){
+			element.style.opacity= "0";
+			element.style.transition = "1s";
+			})
+			
+		}
+		})
+		three.addEventListener("click", function(event){
+			three.style.opacity= "0";
+			click3=1
+			if (click1==1 && click2==1 && click3==1 && click4==1 && click5==1 && click6==1 ){
+			reveal.forEach(function(element){
+
+			element.style.opacity= "0";
+			element.style.transition = "1s";
+			})
+			
+		}
+		})
+		four.addEventListener("click", function(event){
+			four.style.opacity= "0";
+			click4=1
+			if (click1==1 && click2==1 && click3==1 && click4==1 && click5==1 && click6==1 ){
+			reveal.forEach(function(element){
+
+			element.style.opacity= "0";
+			element.style.transition = "1s";
+			})
+			
+		}
+		})
+		five.addEventListener("click", function(event){
+			five.style.opacity= "0";
+			click5=1
+			if (click1==1 && click2==1 && click3==1 && click4==1 && click5==1 && click6==1 ){
+			reveal.forEach(function(element){
+
+			element.style.opacity= "0";
+			element.style.transition = "1s";
+			})
+			
+		}
+		})
+		six.addEventListener("click", function(event){
+			six.style.opacity= "0";
+			click6=1
+			if (click1==1 && click2==1 && click3==1 && click4==1 && click5==1 && click6==1 ){
+				reveal.forEach(function(element){
+
+			element.style.opacity= "0";
+			element.style.transition = "1s";
+			})
+			
+		}
+		})
+
+
+		
+
+	</script>
+
+</body>
+</html>
